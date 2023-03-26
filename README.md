@@ -4,12 +4,16 @@
 
 - Clone to directory
 
-  ``` $git clone github.com/fauzilax/FolcaTechTechnicalTestSolve.git ```
+  ``` $git clone github.com/fauzilax/simple-web-cart.git ```
 
 - Change directory
  
-  ``` cd FolcaTechTechnicalTestSolve```
+  ``` cd simple-web-cart```
+  
+- Open SQL Script and execute each sql code in DBeaver or Mysql WorkBench
+
+  ``` open script at simple-web-cart/public/simplewebcart.sql ```
  
 - Run The Program
 
-  ``` $go run main.go ```
+  ``` $php artisan serve ```
