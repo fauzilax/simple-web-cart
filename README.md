@@ -10,6 +10,10 @@
  
   ``` cd simple-web-cart```
   
+- Migrate table
+
+  ``` $php artisan migrate ```
+  
 - Open SQL Script and execute each sql code in DBeaver or Mysql WorkBench
 
   ``` open script at simple-web-cart/public/simplewebcart.sql ```
