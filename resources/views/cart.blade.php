@@ -36,7 +36,11 @@
                         
                         <div class="back-to-shop">
                             <a href="/">&leftarrow; <span class="text-muted">Back to shop</span></a>
-                            <a href="/summary"  class="checkout-button" >Checkout</a>
+                            @if ($carts->count())
+                            <a href="/summary"  class="checkout-button" >Checkout</a>                                
+                            @else
+                            <a href="#"  class="checkout-button" onclick="return alert('You dont have any product in cart')" >Checkout</a>    
+                            @endif
                             
                         </div>
                     </form>

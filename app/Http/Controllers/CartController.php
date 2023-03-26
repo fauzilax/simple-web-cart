@@ -13,6 +13,7 @@ class CartController extends Controller
     {
         return view('/cart', [
             'title' => 'Cart',
+            'active' => 'active',
             'carts' => Cart::where('user_id', auth()->user()->id)->get(),
         ]);
     }

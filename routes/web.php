@@ -1,9 +1,11 @@
 <?php
 
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\HistoryController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SummaryController;
 use App\Http\Controllers\UserController;
+use App\Models\History;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,3 +34,6 @@ Route::post('/cart', [CartController::class, 'addtocart'])->middleware('auth');
 Route::get('/delete-cart/{id}', [CartController::class, 'deleteproduct'])->middleware('auth');
 
 Route::get('/summary', [SummaryController::class, 'index'])->middleware('auth');
+Route::get('/confirm-checkout', [SummaryController::class, 'confirm'])->middleware('auth');
+
+Route::get('/history', [HistoryController::class, 'index'])->middleware('auth');
