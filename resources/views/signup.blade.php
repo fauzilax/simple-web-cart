@@ -22,7 +22,7 @@
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
-        <p>Dont have account yet ? <a href="/signup">Signup</a> here</p>
+        <p>Already have an account ? <a href="/login">Login</a> here</p>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 @endsection
