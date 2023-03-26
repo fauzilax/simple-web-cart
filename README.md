@@ -18,7 +18,7 @@
 
   ``` open script at simple-web-cart/public/simplewebcart.sql ```
   
-  or you can manualy execute from terminal
+  or you can manualy execute from CLI
   ```
   
   create database simplewebcart;
